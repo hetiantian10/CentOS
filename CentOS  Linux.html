@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>needlinux- CentOS</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4">
+    <meta name="author" content="naem azam at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible mr-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/needlinux.png" alt="logo"><span class="logo-text">Need<span class="text-alt">Linux</span><sup>CentOS</sup></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+		                <form class="search-form">
+				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				        </form>
+	                </div>
+	
+					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>    
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-linux fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="#"><i class="fab fa-ubuntu fa-fw"></i></a></li>
+		            </ul><!--//social-list-->
+		            <a href="menu.html" class="btn btn-primary d-none d-lg-flex">Menu</a>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fab fa-ubuntu"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">What is CentOS Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">CentOS Linux Features</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Why Should I Use CentOS Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Which Image Should I Download?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Desktop Environment Packages</a></li>
+				    
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Intel-based PCs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Virtual Machines</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Learn Basic Commands</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">CentOS Commands</a></li>
+				    
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-terminal"></i></span>Top Used Tools</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">VIM </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">TOP</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">YUM</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-4">NESTAT</a></li>
+					
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Trobleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">The Basics of Troubleshooting</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Installations Failures</a></li><li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder mr-2"><i class="fas fa-book-reader"></i></span>Resources</a></li>
+				    
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-2">Websites</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-6-3">Discuss CentOS Linux</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder mr-2"><i class="fas fa-lightbulb"></i></span>FAQs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-1">What is CentOS Linux?</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-2">Many RPMs still contain the name redhat, rhel, or rh. Shouldn't these be changed? </a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-7-3">What is CentOS Stream?</a></li>
+				   
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time">Last updated: 2021-06-01</span></h1>
+					    <section class="docs-intro">
+						    <p>Linux is a community of open-source Unix like operating systems that are based on the Linux Kernel. It is a free and open-source operating system and the source code can be modified and distributed to anyone commercially or non-commercially under the GNU General Public License.</p>
+							<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/centosintro.jpg"width="700"height="350"> </img>
+						</section><!--//docs-intro-->
+						
+						
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">What is CentOS Linux?</h2>
+						<p>CentOS is a Linux distribution that provides a free and open-source community-supported computing platform, functionally compatible with its upstream source, Red Hat Enterprise Linux.</p>
+<p>The CentOS Linux distribution is a stable, predictable, manageable and reproducible platform derived from the sources of Red Hat Enterprise Linux (RHEL).</p>
+
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/centoslogo.PNG"width="700"height="400"> </img></center>
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">CentOS Linux Features</h2>
+						<p>CentOS is widely used among developers and system administrators as it offers full control over its highly customizable open-source software packages. It is stable and has a large and active support community behind it. Due to its reliability, it has become a popular choice among operating systems for servers.</p>
+						<p><li>User Friendly Desktop Environment </li></p>
+						<p><li>Networking - nftables replaces iptables, iptablesip6table, arptables, and ebtables, serving as a single framework for IPv4 and IPv6 protocols. In addition, the firewalld deamon will also use the same subsystem for filtering network transactions as its default backend. </li></p>
+      <p><li>Cockpit Web Console - Cockpit is highly integrated. Not only does it have an embedded terminal allowing you to switch from terminal to browser at any time, but it also works on mobile devices.</li> </p>
+  <p><li>Content Distribution - BaseOS Repository and AppStream Repository</li> </p>
+   <p><li>Software Management - Integrated with DNF technology, the latest release has a much-improved software management system. It’s increased performance, has well-defined APIs, and support for modular content, software AppStreams for cloud, container workloads, and CI/CD.</li> </p>
+ <p><li>Virtualization</li> </p>
+ <p><li>Upgraded Security and CentOS Stream</li></p>
+              <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/centosstream.PNG"width="700"height="400"> </img></center>
+						
+						
+						</div><!--//table-responsive-->
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-3">
+					
+						  <h2 class="section-heading"> &nbsp;&nbsp&nbsp;&nbsp Why Should I Use CentOS Linux?</h2>
+						<p>&nbsp;&nbsp&nbsp;&nbsp CentOS uses a very stable (and oftentimes more mature) version of its software and because the release cycle is longer, applications do not need to be updated as often. This allows for developers and major corporations who utilize it to save money as it decreases costs associated with additional development time.</p>
+
+                      <p><li>&nbsp;&nbsp&nbsp;&nbsp Standard OS </li></p>
+                          <p>&nbsp;&nbsp&nbsp;&nbsp With a standard OS underlying your workloads, you can easily move them across environments—where it makes sense for your business. Red Hat Enterprise Linux gives you a consistent, stable foundation across hybrid cloud deployments, along with built-in manageability and integration with the broader Red Hat management and automation portfolio.</p>
+                             <p><li>&nbsp;&nbsp&nbsp;&nbsp Security </li></p>
+                          <p>&nbsp;&nbsp&nbsp;&nbsp
+                            SELinux is an access control mechanism that can enforce rules on processes and files, based on policies that you define. One of the most beneficial features is that it reduces vulnerabilities on privilege escalation attacks; If a process is compromised, the attacker would only have access to the normal functions of the process, and only the files that process has been configured to have access to. Because CentOS is more secure out of the box, it is preferred as the starting point as less initial configuration is needed from the start. CentOS regularly pulls backports (or updates) directly from RedHat and pushes those nightly updates out quickly.</p>
+                               <p>&nbsp;&nbsp&nbsp;&nbsp
+                                   Package Management - CentOS uses the YUM (Yellowdog Updater Modified) package manager to keep the system up to date.</p>
+
+                                    <p>&nbsp;&nbsp&nbsp;&nbsp <li> A Wealth of Documentation</li></p>
+                                <p>&nbsp;&nbsp&nbsp;&nbsp Because CentOS is a widely used platform throughout the web hosting world, it has become the de facto industry standard. Another of the benefits of its wide use is the amount of information and documentation available for it.</p>
+                             
+                 <p><li>&nbsp;&nbsp&nbsp;&nbsp Management Panel Support </li></p>
+                     <p>&nbsp;&nbsp&nbsp;&nbsp
+                        CentOS can support multiple management platforms including cPanel, InterWorx, WebMin, DirectAdmin, Spacewalk, CWP, Plesk, ISPConfig, Virtualmin, Vesta CP, and multiple other platforms. These management panels make it easy to host multiple sites on the server as well as keeping all the core processes and server procedures easily managed.</p>
+                                      
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/centosservervsubuntu.JPG"width="700"height="400"> > </img>
+						
+                        </section><!--//section-->
+						
+                    <hr size = "4">
+					<hr size = "4">
+					<section class="docs-section" id="item-1-4">
+						<h2 class="section-heading">Which Image Should I Download?</h2>
+						<p>Before starting installing CentOS, you must download an installation ISO image. Images are available from the CentOS website.</p>
+
+   <p><b> Installer </b></p>
+     
+<p><li> <b>DVD ISO</li></b></p>
+<p>
+This image contains the installer as well as a set of all packages that can be installed during an interactive installation. This is the recommended download for most users.
+ </p>
+<p><li><b>Everything ISO</li></b> </p>
+<p>Contains the installer and all packages available for CentOS. This ISO image can be used to install the system with extra packages (using a Kickstart file and specifying extra packages in the %packages section); it can also be used to set up a local mirror for downloading packages. Note that this image is very large and requires an at least 16 GB flash drive or other storage. </p>
+<p><li><b>Minimal ISO</li></b></p>
+<p> Contains the installer and a minimal set of packages which can be used to install a very basic CentOS system. You can then use Yum to download additional packages from update repositories.</p>
+
+<p>The images listed on the page linked above are for the AMD64/Intel 64 (x86_64) architecture, which is the CentOS basic distribution. Images for additional architectures such as 64-bit ARM (aarch64) or IBM Power Systems (ppc64), as well as cloud and container images, network install media (only the installer, requires a local package mirror) and live images, are available for download from the CentOS Wiki download page.</p>
+
+<p>Similar tools are available for Microsoft Windows and Mac OS X. You can also use the installation program to verify the media when starting the installation.
+                         
+</p>
+                             <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/centosisoimage.PNG" width="700"height="400"> </img>
+							  <br>
+							 
+
+						
+					</section><!--//section-->
+					
+					 <hr size = "4">
+					<hr size = "4">
+					
+					<section class="docs-section" id="item-1-5">
+						<h2 class="section-heading">Desktop Environments Packages of CentOS Linux</h2>
+						<p>CentOS Does not come with two versions as desktop and server Like Ubuntu (Ubuntu has two versions, Ubuntu Server and Ubuntu Desktop), Only Duration the installation user can decide whether wants to install the desktop or Not. And It is quite normal to install a CentOS Server with a Desktop.</p>
+
+<p>CentOS is shipped with the default desktop environment GNOME .</p>
+
+<p>GNOME is the most popular environment in the latest distributions of Linux.</p>
+
+    <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/gettingstarted.JPG"width="700"height="400"> </img>
+						<hr>
+						<hr>
+						</section>
+
+					    <!--//section-->
+					</header></article>
+					
+					<article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+<p> IMPORTANT! Never download CentOS Linux images from anywhere other than the official sources.
+Installing CentOS Linux as workstation and server. The most important factor in the installation of Linux is having the right hardware, as discussed in the Linux hardware requirements tutorial. The next most important factor is obtaining information about your hardware before you start the installation. </p>
+
+<p>Boot your computer or virtual machine from CentOS install image. In the first step you will be prompted to select further actions. Since we need the installation, select the first item in the menu:</p>
+
+ <br>
+ <br>
+     <center> <img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/config.JPG"width="700"height="400"> </img>
+	 <br>
+	 
+ <br>
+	     <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/installation.JPG"width="700"height="400"> </img>	
+                      <br>     
+<br>
+<br>					  
+									 
+  <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/display.JPG"width="700"height="400"> </img>
+<br>
+						<br>
+						
+                                    
+									 <br>
+									<br>
+
+	<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/configcode.JPG"width="700"height="400"> </img>
+                   								
+                                            <br>
+											<br>
+											<br>
+
+					   <center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/dis.JPG"width="700"height="400"> </img> 
+					   <br>
+					   <br>
+					   									<br>
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://www.centos.org/download/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download Now</a></th>
+										<th scope="col"><a href="#" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>	
+</div>								
+						</section><!--//docs-intro-->
+						</section><!--//section-->
+						<hr>
+						<hr>
+					<section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Intel Based PCs</h2>
+						<p>Basic requirements </p>
+						<li>Recommended minimum of 10GB of free disk space</li>
+                        <li>CentOS 7 ISO install file</li>
+						<p>
+						For non-enterprise environments is to download the DVD ISO option, which includes the GUI. We recommend the Minimal ISO option only for production enterprise environments.</p>
+						<p>create a bootable USB, burn it on a DVD .If you are booting from a USB, click the Install to Hard Drive icon on the desktop. That will open the installation wizard.</p>
+						<th scope="col"><a href=" https://www.centos.org/download/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Download CentOS </a></th>
+					</section><!--//section-->
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Virtual Machines</h2>
+						<p>Once you have VirtualBox installed and ready to go, you will need to download the ISO for CentOS. All you have to do is visit their website and click the Get CentOS Now button to download the most recent stable version of the operating system.</p>
+						<p>Oracle provides VirtualBox as a hypervisor for running virtual machines (VMs) while VMware provides multiple products for running VMs in different use cases. ... Both platforms are fast, reliable, and include a wide array of interesting features.</p>
+						<p>Once you have finished providing the basic information (language, keyboard, date and time), click on the installation source to confirm the ISO image. Verify the installation source, go back and click on the software selection option.</p>
+					
+						<th scope="col"><a href="https://www.centos.org/download/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> CentOS VIRTUALBOX </a></th>
+					</section><!--//section-->
+				    </header>
+			    </article>
+			     <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Basic Commands</h1>
+					    <section class="docs-intro">
+						  <p> Welcome to this new experience I’m sure you will enjoy once you start playing with your terminal … CentOS Linux commands are nothing special from Linux commands they are the same so what you are going to learn here will work in every Linux system you may use, try over and over we are learning at the end and this is the most important part of it,
+Commands are almost everything in Linux so you must learn at least the basic commands we are not in Windows to click we are in Linux to type!
+
+so here is a list for some of the basic commands for CentOS Linux </p>
+						  
+						  </section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Learn Basic Commands </h2>
+<p>When operating a Linux OS, you need to use a shell — an interface that gives you access to the operating system’s services. Most Linux distributions use a graphic user interface (GUI) as their shell, mainly to provide ease of use for their users. </p>
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://centoshelp.org/resources/commands/linux-system-commands/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> View Linux Basic Commands </a></th>
+										<th scope="col"><a href="https://wiki.centos.org/Documentation" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-2">
+						<h2 class="section-heading">CentOS linux Commands</h2>
+<p> CentOS Linux commands are nothing special from Linux commands they are the same so what you are going to learn here will work in every Linux system you may use, try over and over we are learning at the end and this is the most important part of it, </p> 
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://cheatography.com/bromono/cheat-sheets/centos-cheat-sheet/sheet" class="btn btn-primary"><i class="fas fa-download mr-2"></i> CentOS linux Commands Cheat  </a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+			   <!--//section-->
+			   
+			   <article class="docs-article" id="section-4">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Top Used Tools </h1>
+					    <section class="docs-intro">
+						    <p>For the casual user of Windows, the Linux command line looks really intimidating and appears to be a complex and unfriendly interface that requires the knowledge of arcane commands.
+
+In reality, the command line is immensely powerful and actually allows an experienced user to monitor, control and tune every single aspect of the system.
+
+Even a minimal installation of CentOS comes with a rich selection of useful tools and many others can be installed from the standard repositories.</p> 
+				         
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">VIM</h2>
+						<P>The command line is all about editing text files and there is no better tool than Vim for this purpose.
+
+Vim is actually a very old program that can be traced back to the original vi developed for Unix systems in 1976. It preserves some archaic features but has been constantly improved over the years and can be personalized with many plugins and options.
+
+The initial learning curve is notoriously steep and most Linux newbies have been trapped in Vim at the start of their journey, with no clue how to get out.
+
+However, Vim can be incredibly useful once you learn some of its shortcuts and becomes much more than a simple text editor. You can configure it for example as a very fast coding tool.</P>
+<section class="docs-section" id="item-4-2">
+<h3 class="section-heading">TOP</h3>
+						<P>Just type top in the terminal and you’ll see a dynamic list of all active processes and threads that can be ordered based on various values, such as the CPU or memory usage.
+
+It is a great troubleshooting tool on servers that experience heavy load and allows processes to be killed directly from its interface.</P>
+					<section class="docs-section" id="item-4-3">
+						<h4> YUM </h4>
+						<p>In all distributions from the RedHat family, yum serves as the package manager of choice. It is a powerful tool that handles the installation of new packages, as well as their update or removal.
+
+Yum is available by default on all CentOS systems but the software selection in the initial repositories is quite poor. This reflects the RedHat philosophy of emphasizing security and stability, by only offering packages that have been thoroughly tested.
+
+As a result, the official repos provide older software, several versions behind the latest one, for example php 5.4
+
+System administrators usually configure other repositories in order to install and update newer packages.
+
+One of the most popular is epel-release, which can be installed as a package and includes many useful tools. Other common choices are the remi or ius repositories for php and its associated extensions.
+
+Most software developers also maintain dedicated repositories that provide the latest versions of their packages.</p>
+<section class="docs-section" id="item-4-4">
+						<h5>NETSTAT</h5>
+						<p>Netstat is very useful command line tool that shows network connections and statistics, as well as open ports and sockets.
+
+Executing it with no arguments will display a lot of information, so you will have to learn how to control the output using flags.
+
+System administrators typically use nestat to view the processes that listen on certain ports, here is an example of the flags used for this purpose and the result: nestat - tulpn</p>
+						<img class="logo-icon mr-2" src=""> </img>
+						
+				
+						
+		<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="#"><i class="fas fa-download mr-2"></i>  Tool Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead></table>
+								</div>
+						</section><!--//section-->
+					
+				
+				
+					</article><!--//docs-article-->
+				
+					
+			    <article class="docs-article" id="section-5">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Trobleshooting</h1>
+					    <section class="docs-intro">
+						    <p> Having trouble installing CentOS Linux? Passwords don't work? Root not working? </p>
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-5-1">
+						<h2 class="section-heading">The Basics of Troubleshooting</h2>
+						<p> Troubleshooting Linux can be very confusing due to all of the moving parts. This doc will aim to cover as much as possible while still being understandable. If you believe something is missing or could be improved, please submit an issue to help to try and get this to be as complete as possible.</p> 
+						<h2> ifconfig</h2> 
+					
+						<p> ifconfig (interface configurator) command is use to initialize an interface, assign IP Address to interface and enable or disable interface on demand. With this command you can view IP Address and Hardware / MAC address assign to interface and also MTU (Maximum transmission unit) size.</p> 
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/iconfiga.JPG"width="700"height="400"> > </img>
+						
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/iconfigb.JPG"width="700"height="400"> > </img>
+						<li>Assigning an IP Address and Gateway to interface on the fly</li>
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/ipadngateaway.JPG"width="400"height="50"> > </img>
+						
+						<li>To enable or disable specific Interface</li>
+						
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/enableiconfig.JPG"width="400"height="500"> > </img>
+						
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/disable.JPG"width="400"height="50"> > </img>
+						<li>PING</li>
+						<p>PING (Packet INternet Groper) command is the best way to test connectivity between two nodes. Whether it is Local Area Network (LAN) or Wide Area Network (WAN). Ping use ICMP (Internet Control Message Protocol) to communicate to other devices. You can ping host name of ip address using below command.</p>
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/ping.JPG"width="700"height="400"> > </img>
+						
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/pingg.JPG"width="700"height="400"> > </img>
+						<li>TRACEROUTE</li>
+						<p>traceroute is a network troubleshooting utility which shows number of hops taken to reach destination also determine packets travelling path. Below we are tracing route to global DNS server IP Address and able to reach destination also shows path of that packet is travelling.</p>
+						<center><img class="logo-icon mr-2" src="file:///F:/Project/Need%20Linux%20-%20CentOS/images/traceroot.JPG"width="700"height="400"> > </img>
+						<li>NETSTAT</li>
+						<p>Netstat (Network Statistic) command display connection info, routing table information etc. To displays routing table information use option as -r.</p>
+						
+						
+						<h2>Commands and processes </h2> 
+						<p> Anything mentioned should have their main page looked at for more details. Additionally, if there is an issue with a graphical tool that does not display an error try running it through the command line.</p> 
+			
+						</section><!--//section-->
+					
+					<section class="docs-section" id="item-5-2">
+						<h2 class="section-heading">Installations Failures</h2>
+					<p>If the installation fails, the messages from these files are consolidated into /tmp/anaconda-tb-identifier, where identifier is a random string.
+
+After successful installation, by default, these files will be copied to the installed system under the directory /var/log/anaconda/. However, if installation is unsuccessful, or if the inst.nosave=all or inst.nosave=logs options are used when booting the installation system, these logs will only exist in the installation program’s RAM disk. This means they are not saved permanently and will be lost once the system is powered down. To store them permanently, copy those files to another system on the network by using scp on the system running the installation program, or copy them to a mounted storage device (such as an USB flash drive).  </p> 
+<p>Systems with some video cards have trouble booting into the graphical installation program. If the installation program does not run using its default settings, it attempts to run in a lower resolution mode. If that still fails, the installation program attempts to run in text mode.
+
+There are several possible solutions to display issues, most of which involve specifying custom boot options.</p>
+						
+						
+						
+						
+						</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Resources</h1>
+					    <section class="docs-intro">
+						   <p> The following resources contain additional information on CentOS Linux. Please use them to get more in-depth knowledge on this.</p>
+					
+					<div class="table-responsive my-4">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th scope="col"><a href="https://docs.centos.org/en-US/centos/install-guide/Trouble-ppc/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Refer Now</a></th>
+										<th scope="col"><a href="#" class="btn btn-secondary"><i class="fas fa-book mr-2"></i> Read PDF Full Guide</a></th>
+										<th scope="col"><a href="#" class="btn btn-info"><i class="fas fa-play-circle mr-2"></i> Watch Video</a></th>
+									</tr>
+								</thead>
+								
+								</table>
+								</div>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-2">
+						<h2 class="section-heading">Website</h2>
+						<th scope="col"><a href="https://www.centos.org/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Visit Now</a></th>
+						<th scope="col"><a href="#" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Open Source</a></th>
+						<th scope="col"><a href="#" class="btn btn-primary"><i class="fas fa-download mr-2"></i> Summit</a></th>
+						<th scope="col"><a href="https://www.centos.org/" class="btn btn-primary"><i class="fas fa-download mr-2"></i> CentOS Projects</a></th>
+						
+						
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-6-3">
+							<h2 class="section-heading">Discuss CentOS Linux</h2>
+						<p>
+The CentOS Project is a community-driven free software effort focused around the goal of providing a rich base platform for open source communities to build upon. We will provide a development framework for cloud providers, the hosting community, and scientific data processing, as a few examples.</p>
+<p>CentOS is very secure and stable. It is on par with RHEL and receives a lot of the same corporate level security updates making it a great choice for all users. Another strength of CentOS would be its longer release cycle and longer support cycle.</p>
+						</section><!--//section-->
+			    </article><!--//docs-article-->
+		        <article class="docs-article" id="section-6">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Development</h1>
+					    <section class="docs-intro">
+						    <p> So one could easily rephrase your question and leave “CentOS ”completely out - - “Can I use LINUX for developing…” And the answer is, of course you can.</p>
+							</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-6-1">
+						<h2 class="section-heading">Some Basic Knows Before Development</h2>
+						Train ...WorkHard and Get your Goal !
+						
+						</section><!--//section-->
+						
+					
+			    </article><!--//docs-article-->
+				
+				<article class="docs-article" id="section-7">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">FAQs</h1>
+					    <section class="docs-intro">
+						   
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-7-1">
+						<h2 class="section-heading">Section Item 7.1 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What is CentOS Linux?</h5>
+						<p>CentOS Linux provides a free and open source computing platform to anyone who wishes to use it. CentOS Linux releases are built from publicly available open source source code provided by Red Hat, Inc for Red Hat Enterprise Linux.</p>
+						<p>CentOS conforms fully with Red Hat, Inc's redistribution policies and aims to be functionally compatible with Red Hat Enterprise Linux. CentOS mainly changes packages to remove trademarked vendor branding and artwork.</p>
+
+<p>CentOS Linux does not contain Red Hat Enterprise Linux or Fedora Linux; nor does it have any of their certifications, although it is built from the same source code as the Red Hat Enterprise Linux.</p>
+<section class="docs-section" id="item-7-2">
+<h2 class="section-heading">Section Item 7.2 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>Many RPMs still contain the name redhat, rhel, or rh. Shouldn't these be changed?</h5>
+						<p>The upstream vendor is using open source (mostly GPL) software in their business model. They take software that other people write (Gnome.org, X.org, KDE.org, OpenOffice.org to name a few). They repackage the source files into RPM format for redistribution. Because they chose an open source model to obtain the software they distribute, they must provide their source code to others. That is how the GPL works. The upstream vendor provides much added value by creating the Source RPMS and distributing them. They also fix problems in software and provide feedback to the software developers ... this is what makes open source software work.  </p>
+						<section class="docs-section" id="item-7-3">
+						<h2 class="section-heading">Section Item 7.3 <small>(FAQ Category One)</small></h2>
+						<h5 class="pt-3"><i class="fas fa-question-circle mr-1"></i>What is CentOS Stream?</h5>
+						<p>CentOS Stream is a developer-forward distribution that aims to help community members, Red Hat partners and others take full advantage of open source innovation within a more stable and predictable Linux ecosystem. Its content is what Red Hat intends to be in the next update of a stable RHEL release. It is free for anyone to download, use, study, modify, and redistribute (with the exception of the CentOS trademarks, which are owned by Red Hat). CentOS Stream is a distribution that community members can use to take advantage of a stable ABI/API for development and testing, while still seeing some updates on an accelerated basis.</p>
+						
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+				
+				
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="#" target="_blank">Piyumi Rajapaksha</a> for developers</small>
+				        
+						<ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
